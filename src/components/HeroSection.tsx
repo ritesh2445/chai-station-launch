@@ -44,7 +44,7 @@ const HeroSection = () => {
           transition={{ delay: 0.3, duration: 1, ease: "easeOut" }}
           className="font-body text-sm tracking-[0.3em] uppercase text-chai-gold mb-6"
         >
-          Welcome to
+          WELCOME TO THE CHAI STATION
         </motion.p>
 
         <div className="overflow-hidden">
@@ -62,7 +62,7 @@ const HeroSection = () => {
             initial={{ y: "100%" }}
             animate={{ y: "0%" }}
             transition={{ delay: 0.7, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-            className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-tight max-w-4xl italic text-chai-gold"
+            className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-tight max-w-4xl text-chai-gold drop-shadow-2xl brightness-110 tracking-widest"
           >
             It's an Experience.
           </motion.h1>

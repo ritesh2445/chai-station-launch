@@ -81,7 +81,9 @@ const LocationSection = () => {
               ].map((s) => (
                 <a
                   key={s.label}
-                  href="#"
+                  href={s.label === "WhatsApp" ? "https://wa.me/" : `https://${s.label.toLowerCase()}.com`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={s.label}
                   className="w-11 h-11 flex items-center justify-center rounded-full bg-muted text-foreground transition-all duration-300 hover:bg-primary hover:text-primary-foreground hover:scale-110"
                 >

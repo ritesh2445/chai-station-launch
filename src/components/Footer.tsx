@@ -12,13 +12,18 @@ const Footer = () => {
 
         {/* Nav links */}
         <div className="flex flex-wrap justify-center gap-6 mt-8">
-          {["Home", "Our Menu", "About Us", "Find Us"].map((link) => (
+          {[
+            { label: "Home", href: "#home" },
+            { label: "Our Menu", href: "#menu" },
+            { label: "About Us", href: "#about" },
+            { label: "Find Us", href: "#location" },
+          ].map((link) => (
             <a
-              key={link}
-              href={`#${link.toLowerCase().replace(/\s+/g, "")}`}
+              key={link.label}
+              href={link.href}
               className="font-body text-sm text-chai-ivory/50 hover:text-chai-gold transition-colors duration-300"
             >
-              {link}
+              {link.label}
             </a>
           ))}
         </div>
