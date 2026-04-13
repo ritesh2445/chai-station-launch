@@ -54,7 +54,7 @@ const AboutSection = () => {
               Whether you're here for your morning ritual, a late-night chat, or just a quick bite — we'll always have your cup ready.
             </p>
             <p className="font-script text-2xl text-primary mt-6">
-              — The Chai Station Family
+              — Om Tiwalkar, Founder
             </p>
 
             <div className="flex flex-wrap gap-4 mt-8">
