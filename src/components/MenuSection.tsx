@@ -31,13 +31,11 @@ const MenuCard = ({ item, index }: { item: typeof menuItems[0]; index: number })
   return (
     <motion.div
       ref={ref}
-      style={{ y }}
       initial={{ opacity: 0, rotateX: 8, scale: 0.95 }}
       whileInView={{ opacity: 1, rotateX: 0, scale: 1 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ delay: index * 0.06, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
       className="group bg-card rounded-2xl overflow-hidden border border-border hover:border-accent/50 cursor-pointer transition-shadow duration-500 hover:shadow-2xl hover:shadow-primary/10"
-      style={{ perspective: "800px" }}
     >
       <div className="relative overflow-hidden aspect-square">
         <img
