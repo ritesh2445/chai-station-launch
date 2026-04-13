@@ -32,7 +32,7 @@ const AnimatedCounter = ({ target, suffix }: { target: number; suffix: string })
   }, [inView, target]);
 
   return (
-    <span ref={ref} className="font-display text-4xl md:text-5xl font-bold text-chai-ivory">
+    <span ref={ref} className="font-display text-4xl md:text-5xl font-bold text-chai-ivory tabular-nums">
       {count}{suffix}
     </span>
   );
@@ -40,16 +40,16 @@ const AnimatedCounter = ({ target, suffix }: { target: number; suffix: string })
 
 const StatsBar = () => {
   return (
-    <section className="bg-primary py-10 md:py-14">
+    <section className="bg-primary py-10 md:py-14 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4">
           {stats.map((stat, i) => (
             <motion.div
               key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.1, duration: 0.5 }}
+              transition={{ delay: i * 0.1, duration: 0.5, type: "spring", stiffness: 150 }}
               className="text-center"
             >
               <AnimatedCounter target={stat.number} suffix={stat.suffix} />
