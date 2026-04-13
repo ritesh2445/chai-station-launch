@@ -26,7 +26,7 @@ const Footer = () => {
         <div className="w-16 h-px bg-chai-ivory/20 mx-auto my-8" />
 
         <p className="font-body text-sm text-chai-ivory/40">
-          © 2025 The Chai Station, Amravati. All rights reserved.
+          © 2025 The Chai Station, Amravati. Founded by Om Tiwalkar. All rights reserved.
         </p>
         <p className="font-body text-xs text-chai-ivory/30 mt-2">
           Designed with ☕ and love in Maharashtra

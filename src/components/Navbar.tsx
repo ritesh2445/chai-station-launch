@@ -52,12 +52,6 @@ const Navbar = () => {
                 {link.label}
               </a>
             ))}
-            <a
-              href="#order"
-              className="px-5 py-2.5 bg-primary text-accent font-body text-sm font-semibold rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-primary/30 hover:scale-105"
-            >
-              Order Now
-            </a>
           </div>
 
           {/* Mobile hamburger */}
@@ -94,13 +88,6 @@ const Navbar = () => {
                   {link.label}
                 </a>
               ))}
-              <a
-                href="#order"
-                onClick={() => setMobileOpen(false)}
-                className="mt-2 text-center px-5 py-3 bg-primary text-accent font-body font-semibold rounded-full"
-              >
-                Order Now
-              </a>
             </div>
           </motion.div>
         )}
